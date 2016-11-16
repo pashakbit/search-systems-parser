@@ -1,0 +1,29 @@
+{
+  "name": "search-systems-parser",
+  "version": "0.0.0",
+  "description": "Parser content search systems (for list requests) as google.com, yandex.ru and yahoo.com",
+  "main": "parser.js",
+  "scripts": {
+    "test": "",
+    "start": "node parser"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pashakbit/search-systems-parser.git"
+  },
+  "keywords": [
+    "parser",
+    "search-systems"
+  ],
+  "author": "Kokovin Pavel <kokovinpavel@yandex.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pashakbit/search-systems-parser/issues"
+  },
+  "homepage": "https://github.com/pashakbit/search-systems-parser#readme",
+  "dependencies": {
+    "request": ">=2.78.0",
+    "cheerio": ">=0.22.0",
+    "iconv-lite": ">=0.4.13"
+  }
+}
