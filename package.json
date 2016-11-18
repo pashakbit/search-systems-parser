@@ -5,7 +5,8 @@
   "main": "parser.js",
   "scripts": {
     "test": "",
-    "start": "node parser"
+    "build": "babel dev -d dist",
+    "start": "npm run build && node dist/parser"
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,15 @@
     "url": "https://github.com/pashakbit/search-systems-parser/issues"
   },
   "homepage": "https://github.com/pashakbit/search-systems-parser#readme",
+  "devDependencies": {
+    "babel-cli": ">=6.14.0",
+    "babel-core": ">=6.14.0",
+    "babel-preset-stage-0": ">=6.5.0"
+  },
   "dependencies": {
-    "request": ">=2.78.0",
     "cheerio": ">=0.22.0",
-    "iconv-lite": ">=0.4.13"
+    "iconv-lite": ">=0.4.13",
+    "request": ">=2.78.0",
+    "sync-request": "^3.0.1"
   }
 }
